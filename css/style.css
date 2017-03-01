@@ -1,0 +1,206 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+}
+
+h2,
+h3 {
+  color: #888;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+a {
+  color: #274563;
+}
+
+a:hover,
+a:focus {
+  color: #202e59;
+}
+
+#banner .container,
+main header,
+#portfolio .grid,
+#contact>div,
+footer #footer-above {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+
+.navbar {
+  font-family: Roboto;
+  padding: .5em 2em;
+}
+
+.navbar-brand {
+  font-size: 40px;
+}
+
+main header {
+  text-align: right;
+  padding: 20px 10% 50px;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  -ms-flex-line-pack: distribute;
+  align-content: space-around;
+}
+
+main header img {
+  border-radius: 50%;
+  margin: 10px 0 10px;
+  max-width: 80%;
+  height: auto;
+  width: 220px;
+}
+
+@media(min-width:1023px) {
+  main header .intro-text {
+    text-align: right;
+    width: 610px;
+  }
+}
+
+main header .intro-text .skills {
+  font-size: 1.15em;
+}
+    .intro-text {
+      max-width: 675px;
+      text-align: center;
+      margin-bottom: 30px;
+      @media(min-width: 1023px) {
+        text-align: right;
+        width: 610px;
+      }
+      .skills {
+        font-size: 1.15em;
+      }
+    }
+  }
+#portfolio .grid {
+  padding: 0;
+  max-width: 90%;
+  list-style: none;
+  margin-top: 20px;
+}
+
+#portfolio .grid li {
+  margin: 20px;
+  max-width: 600px;
+  list-style: none;
+}
+
+@media(min-width:1023px) {
+  #portfolio .grid li {
+    max-width: 450px;
+  }
+}
+
+#portfolio img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.navbar {
+  font-family: Roboto;
+}
+
+.navbar-brand {
+  font-size: 40px;
+}
+
+label {
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+form {
+  margin: 0 auto;
+  width: 400px;
+}
+
+input,
+textarea {
+  width: 350px;
+  background: #efefef;
+  border: 1px solid #dedede;
+  padding: 10px;
+  margin-top: 3px;
+  font-size: 0.9em;
+  color: #3a3a3a;
+}
+
+input {
+  height: 27px;
+}
+
+textarea {
+  height: 200px;
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid #97d6eb;
+}
+
+#submit {
+  width: 127px;
+  height: 38px;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  color: white;
+  background-color: #004080;
+  border-radius: 5px;
+}
+
+#submit:hover {
+  opacity: .8;
+}
+
+#social {}
+
+#social ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+#social li {
+  float: left;
+  display: inline;
+}
+
+li a {
+  display: block;
+  color: #004080;
+  text-align: center;
+  text-decoration: none;
+  padding: 0 16px;
+}
+
+
+/* Change the link color to #111 (black) on hover */
+
+li a:hover {
+  opacity: .8;
+}
+
+#footer-below {
+  margin-top: 25px;
+}
