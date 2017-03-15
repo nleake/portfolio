@@ -1,3 +1,1 @@
-A Pen created at CodePen.io. You can find this one at http://codepen.io/lichi/pen/dNbWjO.
-
- 
+portfolio site to demonstrate previous work and display contact information :)
