@@ -93,7 +93,10 @@ main header .intro-text .skills {
   max-width: 675px;
   text-align: center;
   margin-bottom: 30px;
-  @media(min-width: 1023px) {
+}
+
+@media(min-width: 1023px) {
+  .intro-text {
     text-align: right;
     width: 610px;
   }
@@ -103,11 +106,13 @@ main header .intro-text .skills {
   }
 }
 
+
 #portfolio .grid {
   padding: 0;
-  max-width: 90%;
+  max-width: 98%;
   list-style: none;
   margin-top: 20px;
+  background: #F0F3F7;
 }
 
 #portfolio .grid li {
@@ -137,6 +142,35 @@ main header .intro-text .skills {
 #portfolio .grid p {
   padding: 2em;
   font-size: .75em;
+}
+
+#portfolio .grid li a{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+/*TODO Make hovertext appear on mouse entry of box*/
+
+.hovertext {
+  position: absolute;
+  display: inline-block;
+  color: white;
+  padding: 10px 120px;
+  background-color: rgba(0,64,128,0.8);
+  text-align: center;
+  z-index: 10;
+  opacity: 0;
+  font-size: 20px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-radius: 3%;
+}
+
+.hovertext:hover {
+  opacity: 1;
 }
 
 .navbar {
@@ -251,3 +285,23 @@ footer, #footer-below {
 #footer-below {
   padding-top: 50px;
 }
+
+.trifold {
+  font-size: 14px;
+  margin: 30px auto 70px auto;
+  text-align: center;
+  display: block;
+}
+
+.trifold p {
+  padding: 0 30px;
+}
+
+#design, #code, #collaborate {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    color: #597293;
+}
+
