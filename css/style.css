@@ -50,15 +50,15 @@ footer #footer-above {
   font-size: 40px;
 }
 
-.navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a   {
-  color: #597293;
-}
-
 @media(min-width: 300px) {
   .navbar-brand {
     text-align: center;
     width: 100%;
   }
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a   {
+  color: #597293;
 }
 
 main header {
@@ -81,7 +81,8 @@ main header img {
 @media(min-width:1023px) {
   main header .intro-text {
     text-align: right;
-    width: 610px;
+    width: 50%;
+    margin: 2em;
   }
 }
 
@@ -148,28 +149,6 @@ main header .intro-text .skills {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-}
-
-
-.hovertext {
-  position: absolute;
-  display: inline-block;
-  color: white;
-  padding: 10px 120px;
-  background-color: rgba(0,64,128,0.8);
-  text-align: center;
-  z-index: 10;
-  opacity: 0;
-  font-size: 20px;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  border-radius: 3%;
-}
-
-.hovertext:hover {
-  opacity: 1;
 }
 
 .navbar {
@@ -266,9 +245,6 @@ li a {
   text-decoration: none;
   padding: 0 16px;
 }
-
-
-/* Change the link color to #111 (black) on hover */
 
 li a:hover {
   opacity: .8;
