@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-family: SF Pro Text, arial, sans-serif;
+  font-family: 'Work Sans', arial, sans-serif;
   line-height: 1.5;
   color: #333333;
 }
@@ -20,12 +20,15 @@ body {
 }
 
 h2, label {
-  font-family: futura, arial, sans-serif;
   font-size: 2em;
 }
 
 p {
   max-width: 500px;
+}
+
+img {
+  max-width: 95%;
 }
 
 a { 
@@ -70,10 +73,10 @@ button:active {
     }
 
 .nav {
-  font-family: rez;
+  font-family: Futura, Arial, Helvetica, sans-serif;
   padding-left: 5vw;
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   justify-content: space-between;
 }
 
@@ -94,34 +97,39 @@ button:active {
 
 .pink {
   display: flex;
+  flex-wrap: wrap-reverse;
   justify-content: space-around;
   align-items: center;
   background-color: #DFA4D7;
-  font-family: SF Pro Text;
   font-size: 1em;
   
 }
-    .pink__intro {
-    margin-bottom: 3em;
-    max-width: 35vw;
-    transform: rotate(-10deg);
-    
-  }
-        .pink h1 { 
-          font-family: futura, arial, sans-serif;
-          font-size: 3em;
-        }
+
+.pink__intro {
+  margin-bottom: 3em;
+  max-width: 35vw;
+  transform: rotate(-10deg);
+}
+
+.pink h1 { 
+  font-family: Futura, Arial, Helvetica, sans-serif;
+  font-size: 3em;
+}
+
+.pink__photo {
+  display: relative;
+  float: right;
+  top: -2em;
+}
 
 .special {
   color: white;
   font-style: italic;
 }
 
-.pink__photo {
-  display: block;
-  width: 400px;
-  height: 300px;;
-  background-color: blue;
+.card img {
+  object-fit: contain;
+  max-width: 100%;
 }
 
 .pink__btn { 
@@ -156,12 +164,12 @@ button:active {
 }
 
 .card {
-  max-width: 400px;
-  margin-right: 20px;
+  margin: 0 24px 3em 0;
+  flex: 1 1 400px;
 }
 
 .card__header {
-  font-family: futura, arial, sans-serif;
+  font-family: 'Futura', Arial, Helvetica, sans-serif;
   font-size: 1.5em;
   font-weight: 300;
   text-transform: uppercase;
@@ -196,6 +204,7 @@ input, textarea {
   border-top: 1px solid #333;
   display: flex;
   justify-content: space-around;
+  max-width: 100%;
 }
 
 .footer__link li {
@@ -211,4 +220,8 @@ input, textarea {
 
 .grid-section {
   margin-left: 5vw;
+}
+
+.project__image {
+  margin: 3em 0;
 }
