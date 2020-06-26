@@ -23,168 +23,77 @@
 </head>
 
 <body>
-  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-
-  <nav class="navbar navbar-default" role="navigation">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Nick Leake</a>
-    </div>
-
-
-    <ul class="nav navbar-nav navbar-right">
-      <li>
-        <a href="#portfolio">portfolio</a>
-      </li>
-
-
-      <li>
-        <a href="#contact">contact</a>
-      </li>
+  <nav class="nav">
+    <a href="#" class="nav__logo">Nick Leake</a>
+    <ul class="nav__navbar">
+      <li><a href="#work">my work</ahref></li>
+      <li><a href="#contact">contact me</a></li>
     </ul>
   </nav>
-
-
-  <main>
-    <header>
-      <div class="intro-text">
-        <p>product manager and aspiring designer  living in DC</p>
-
-        <hr>
-        <span class="skills">likes: user-centered design, lean, XP</span>
-      </div>
-      <img alt="A picture of Nick" src="images/leek.jpg" title="A picture of Nick">
-    </header>
-
-    <section class="container trifold">
-    <div class="col-xs-12 col-md-4">
-      <h3>Design</h3>
-      <i class="fa fa-flask" id="design"></i>
-      <p>I dig sketching simple, expressive interfaces that solve problems and reduce clutter. I believe that less is more most of the time.</p>
+  <header class="pink">
+    <div class="pink__intro">
+      <h1>I am a <span class="special">product</span> person</h1>
+    <p>I've built my career as a product manager and UI designer living around Washington, DC. I currently lead a fast and creative team at USCIS and love what I do.</p>
+    <a href="work page" class="pink__btn">View Work</a>
     </div>
-    <div class="col-xs-12 col-md-4">
-      <h3>Code</h3>
-      <i class="fa fa-coffee" id="code"></i>
-      <p>I enjoy writing HTML, CSS, and JavaScript. I'm fond of working from scratch, but also like learning new libraries and frameworks.</p>
+     <!-- CAT PHOTO HERE -->
+    <div class="pink__photo"><img src="images/home/coffee_cat-640.png" alt="an illustration of a cat sitting in a coffee cup"></div>     
+  </header>
+  
+  <section class="section">
+  <h2 class="section__header">Selected Work</h2>
+    <div class="card-set">
+      <article class="card">
+        <div class="pink__photo"><img src="images/projects/uscis/serviceBP-480.png" alt="service blueprint Nick's team built to map refugee officer workflows"></div>
+        <h3 class="card__header">USCIS</h3>
+        <p class="card__role">Role: Senior Product Manager</p>
+        <p class="card__description">At USCIS, I lead product development teams to build and manage national refugee and asylum case management systems.</p>
+      </article>
+      <article class="card">
+        <!-- CARD PHOTO HERE -->
+        <div class="pink__photo"><img src="images/usatpage1.jpg" alt="the USA TODAY homepage"></div>
+        <h3 class="card__header">USA TODAY NETWORK</h3>
+        <p class="card__role">Role: Product Manager</p>
+        <p class="card__description">At Gannett, I interviewed reporters across the U.S. and designed features for Presto, Gannett's home-grown content management system.</p>
+      </article>
+      <article class="card">
+        <!-- CARD PHOTO HERE -->
+        <div class="pink__photo"><img src="images/mobomoNLUSA1.jpg" alt="homepage for the Embassy of the Netherlands business portal"></div>
+        <h3 class="card__header">Netherlands Embassy</h3>
+        <p class="card__role">Role: Product Manager</p>
+        <p class="card__description">At Mobomo, LLC, I transformed client needs into responsive app designs and led distributed development teams in implementation and testing.</p>
+      </article>
     </div>
-    <div class="col-xs-12 col-md-4">
-      <h3>Collaborate</h3>
-      <i class="fa fa-beer" id="collaborate"></i>
-      <p>I appreciate conversations with teammates, users, and clients. Collecting ideas and feedback is critical in creating meaningful solutions.</p>
+  </section>
+    <!-- add more articles below -->
+  <section class="pink">
+    <div class="pink__intro">
+      <h1>I love making <span class="special">meaningful</span> products.</h1 >
+      <p>I pair human-centered design techniques with lean product management  to deliver working software quickly.</p>
+      <a href="#"class="pink__btn">Learn About Me</a>
     </div>
-    </section>
-
-
-    <!-- Gallery Grid Section-->
-    <section id="portfolio">
-      <h2>Portfolio</h2>
-      <hr>
-      <ul class="grid">
-        <li>
-          <h3>Responses to Climate Change</h3>
-          <a href="https://www.usace.army.mil/" target="blank">
-          <img alt="Work for US Army Corps of Engineers' Responses to Climate Change progam at Booz Allen Hamilton" src="images/USACE.jpg">
-          </a>
-          <p>As a consultant at <strong>Booz Allen Hamilton</strong>, I performed climate data analysis and modernized applications that help the <strong> U.S. Army Corps of Engineers</strong> monitor civil works projects.</p>
-        </li>
-
-        <li>
-          <h3>USA TODAY Network</h3>
-          <a href="http://www.gannett.com/" target="blank">
-          <img alt="Work for USA TODAY and Gannett Co, Inc" src="images/usatpage1.jpg">
-          </a>
-          <p>At <strong>Gannett</strong>, I interviewed reporters across the U.S. and designed features for Presto, Gannett's home-grown CMS powering their digital news portfolio.</p>
-        </li>
-
-        <li>
-          <h3>Embassy of the Netherlands</h3>
-          <a href="https://www.mobomo.com/portfolio/nl-in-the-usa/" target="blank">
-          <img alt="Work for The Kingdom of the Netherlands while at Mobomo, LLC" src="images/mobomoNLUSA1.jpg">
-          </a>
-          <p>At <strong>Mobomo, LLC</strong>, I transformed client requirements into responsive app designs and led distributed development teams in implementation and testing.</p>
-        </li>
-
-        <li>
-          <h3>The Daily Progress</h3>
-          <a href="http://www.dailyprogress.com" target="blank">
-          <img alt="Work at Berkshire Hathaway Media Group and The Daily Progress" src="images/dailyprogress1.jpg">
-          </a>
-          <p>While administering websites for several newspapers owned by <strong>Berkshire Hathaway</strong>, I designed page layouts, built digital ad campaigns, and grew audiences using Twitter and Facebook.</p>
-        </li>
-
-        <li>
-          <h3>Yelp Camp</h3>
-          <a href="https://cryptic-shelf-19427.herokuapp.com/" target="blank">
-          <img alt="People camping out in the wilderness" src="images/yelpcamp.jpg">
-          </a>
-          <p>This is a side project I built during a <strong>Udemy</strong> web developer course. It uses Node, Express, Bootstrap, REST, and MongoDB to allow users to submit, review, and comment on campgrounds.</p>
-        </li>
-
-        <li>
-          <h3>To-do list</h3>
-          <a href="https://glitch.com/edit/#!/iron-cardboard" target="blank">
-          <img alt="A basic to-do list application" src="images/todo.jpg">
-          </a>
-          <p>This is a to-do list I built using jQuery while attending <strong>General Assembly</strong>, which draws inspiration from Wunderlist.</p>
-        </li>
-      </ul>
-    </section>
-
-
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <hr>
-
-      <div>
-        <form action="https://formspree.io/leakend@dukes.jmu.edu" id="contactForm" method="post" name="contactForm" novalidate="">
-          <div class="form-item">
-            <label for="“name”">Name</label> <input id="name" placeholder="your name" type="text" name="name">
-          </div>
-          <div class="form-item">
-            <label for="“email”">Email</label> <input id="email" placeholder="person@domain.com" type="email" name="_replyto">
-          </div>
-          <div class="form-item">
-            <label for="“message”">Message</label>
-            <textarea id="message" placeholder="say hello and introduce yourself!" required="" rows="5" name="message"></textarea>
-          </div>
-          <button id="submit" type="submit">Send</button>
-        </form>
-      </div>
-    </section>
-  </main>
-  <!-- Footer-->
-
-
+    <div class="pink__photo"><img src="images/leek.jpg" alt="a picture of Nick on his wedding day"></div>
+  </section>
+  <section class="contact-form">
+    <h2>Let's grab coffee sometime</h2>
+    <p>If you want to chat, please drop me a line below. You can also follow or message me via the social media links in the footer. Looking forward to hearing from you!</p>
+    <form action="https://formspree.io/leakend@dukes.jmu.edu" id="contactForm" method="post" name="contactForm" novalidate="">
+          <label for="“name”">Name</label> <input id="name" placeholder="your name" type="text" name="name">
+          <label for="“email”">Email</label> <input id="email" placeholder="person@domain.com" type="email" name="_replyto">
+          <label for="“message”">Message</label>
+          <textarea id="message" placeholder="say hello and introduce yourself!" required="" rows="5" name="message"></textarea>
+        <button id="submit" type="submit">Send</button>
+      </form>
+  </section>
   <footer>
-    <div id="footer-above">
-      <div>
-        <h3>About this page</h3>
-          <p>I built this site as a portfolio. Feel free to contact me.</p>
-      </div>
-
-      <div id="social">
-        <h3>find me on</h3>
-          <ul>
-            <li>
-              <a class="button social" href="https://www.linkedin.com/in/nickleake"><i class="fa fa-fw fa-linkedin"></i></a>
-            </li>
-            <li>
-              <a class="button social" href="https://github.com/nleake"><i class="fa fa-fw fa-github"></i></a>
-            </li>
-            <li>
-              <a class="button social" href="https://twitter.com/nick_leake"><i class="fa fa-fw fa-twitter"></i></a>
-            </li>
-          </ul>
-      </div>
-    </div>
-
-
-    <div class="col-md-12" id="footer-below">
-      nleake ©
-      <script>
-        document.write(new Date().getFullYear())
-      </script>. thanks for visiting!
-    </div>
+    <ul class=footer__nav>
+      <li class="footer__link"><a href="">Projects</a></li>
+      <li class="footer__link"><a href="">About Me</a></li>
+      <li class="footer__link"><a href="">LinkedIn</a></li>
+      <li class="footer__link"><a href="">Twitter</a></li>
+      <li class="footer__link"><a href="">Instagram</a></li>
+      <li class="footer__link"><a href="">GitHub</a></li>
+    </ul>
   </footer>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'>
   </script>

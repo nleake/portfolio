@@ -23,149 +23,38 @@
 </head>
 
 <body>
-  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-
-  <nav class="navbar navbar-default" role="navigation">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Nick Leake</a>
-    </div>
-
-
-    <ul class="nav navbar-nav navbar-right">
-      <li>
-        <a href="#portfolio">portfolio</a>
-      </li>
-
-
-      <li>
-        <a href="#contact">contact</a>
-      </li>
+  <nav class="nav">
+    <a href="#" class="nav__logo">Nick Leake</a>
+    <ul class="nav__navbar">
+      <li><a href="#work">my work</ahref></li>
+      <li><a href="#contact">contact me</a></li>
     </ul>
   </nav>
+  <div class="container">
+    <h1>USCIS</h1>
+    <p class="date">2017 - present</p>
+    <p class="intro">At USCIS, I was hired as a product manager to help modernize refugee and asylum case management systems. Our team has participated in hundreds of user interviews and tests interactive prototypes using Sketch and InVision each week.</p>
+    <span class="pink__photo"></span>
+    <p>USCIS officers adjudicate immigration benefits, and the agency faces a growing backlog of cases. Our team focused on improving processes related to asylum seekers and refugees.</p>
+    <p>Our team interviewed staff each week to learn about how they worked and the different challenges facing the agency. We synthesized our observations into insights and action items that helped us identify opportunities for our app to add value.</p>
 
-
-  <main>
-    <header>
-      <div class="intro-text">
-        <p>product manager and aspiring designer  living in DC</p>
-
-        <hr>
-        <span class="skills">likes: user-centered design, lean, XP</span>
-      </div>
-      <img alt="A picture of Nick" src="images/leek.jpg" title="A picture of Nick">
-    </header>
-
-    <section class="container trifold">
-    <div class="col-xs-12 col-md-4">
-      <h3>Design</h3>
-      <i class="fa fa-flask" id="design"></i>
-      <p>I dig sketching simple, expressive interfaces that solve problems and reduce clutter. I believe that less is more most of the time.</p>
-    </div>
-    <div class="col-xs-12 col-md-4">
-      <h3>Code</h3>
-      <i class="fa fa-coffee" id="code"></i>
-      <p>I enjoy writing HTML, CSS, and JavaScript. I'm fond of working from scratch, but also like learning new libraries and frameworks.</p>
-    </div>
-    <div class="col-xs-12 col-md-4">
-      <h3>Collaborate</h3>
-      <i class="fa fa-beer" id="collaborate"></i>
-      <p>I appreciate conversations with teammates, users, and clients. Collecting ideas and feedback is critical in creating meaningful solutions.</p>
-    </div>
-    </section>
-
-    Design CMS for USA TODAY
-    Gannett owned over one hundred newspapers and television stations, each with their own websites. The company supported several case management systems (CMS); some of which lacked basic digital publishing features. USA Today is Gannett's largest property, but their error-prone system was notorious in the newsroom for causing delays.
+    <span class="pink__photo"></span>
+  
+    <p>We used a service blueprint to visualize and talk about the numerous steps involved in processing each case. We used this to identify core tasks and organize case information into clearly labeled cards.</p>
     
-    GOAL
-    Create a single CMS for Gannett news sites.
+    <p>After validating prototypes for a new feature by testing in inVision, I wrote user stories, prioritized our backlog, and worked with our engineers to keep the team delivering updates at a weekly cadence. #BuildMeasureLearn</p>
     
-    CHALLENGE
-    How might we build an intuitive system that could be used by all Gannett properties?
-    
-    THE TEAM
-    We were eight developers, two product managers, and one designer.
-    
-    APPROACH
-    Interview journalists to learn how they work and usability test interactive prototypes.
-    
-    MY ROLE
-    Design and prioritize features, write user stories.
-    Facilitate interviews and usability tests.
-    Perform acceptance testing on delivered stories.
-    
-    <img src="#usatoday newsroom" label="USA TODAY's newsroom daily standup">
-    
-    <h2>User Research</h2>
-    We observed and interviewed dozens of journalists around the country to design a story editor with an inviting interface and intuitive formatting options that would allow journalists to publish breaking news more quickly.
-    
-    <h2>Add & Upload Photos</h2>
-    Our team designed a simple image upload service that could tag and process large collections of images. We used an assumptions tracker to usability test how well journalists understood the interface.
-    
-    TODO Add more details about lessons learned during this project..
-    
-    OUTCOME
-    After releasing the CMS to the USA TODAY newsroom, it was adopted by Gannett properties nationwide. This provided journalists with modern web publishing functionality and enabled content sharing across the largest local news network in the United States.
-    
-    TODO insert link to Poynter article here.
-    
-
-
-
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <hr>
-
-      <div>
-        <form action="https://formspree.io/leakend@dukes.jmu.edu" id="contactForm" method="post" name="contactForm" novalidate="">
-          <div class="form-item">
-            <label for="“name”">Name</label> <input id="name" placeholder="your name" type="text" name="name">
-          </div>
-          <div class="form-item">
-            <label for="“email”">Email</label> <input id="email" placeholder="person@domain.com" type="email" name="_replyto">
-          </div>
-          <div class="form-item">
-            <label for="“message”">Message</label>
-            <textarea id="message" placeholder="say hello and introduce yourself!" required="" rows="5" name="message"></textarea>
-          </div>
-          <button id="submit" type="submit">Send</button>
-        </form>
-      </div>
-    </section>
-  </main>
-  <!-- Footer-->
-
-
+<a class="project-nav" href="#">View Next Project</a>
+  </div>
   <footer>
-    <div id="footer-above">
-      <div>
-        <h3>About this page</h3>
-          <p>I built this site as a portfolio. Feel free to contact me.</p>
-      </div>
-
-      <div id="social">
-        <h3>find me on</h3>
-          <ul>
-            <li>
-              <a class="button social" href="https://www.linkedin.com/in/nickleake"><i class="fa fa-fw fa-linkedin"></i></a>
-            </li>
-            <li>
-              <a class="button social" href="https://github.com/nleake"><i class="fa fa-fw fa-github"></i></a>
-            </li>
-            <li>
-              <a class="button social" href="https://twitter.com/nick_leake"><i class="fa fa-fw fa-twitter"></i></a>
-            </li>
-          </ul>
-      </div>
-    </div>
-
-
-    <div class="col-md-12" id="footer-below">
-      nleake ©
-      <script>
-        document.write(new Date().getFullYear())
-      </script>. thanks for visiting!
-    </div>
+    <ul class=footer__nav>
+      <li class="footer__link"><a href="">Projects</a></li>
+      <li class="footer__link"><a href="">About Me</a></li>
+      <li class="footer__link"><a href="">LinkedIn</a></li>
+      <li class="footer__link"><a href="">Twitter</a></li>
+      <li class="footer__link"><a href="">Instagram</a></li>
+      <li class="footer__link"><a href="">GitHub</a></li>
+    </ul>
   </footer>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'>
   </script>
