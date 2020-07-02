@@ -1,11 +1,10 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
   font-family: 'Work Sans', arial, sans-serif;
   line-height: 1.5;
   color: #333333;
@@ -24,7 +23,7 @@ h2, label {
 }
 
 p {
-  max-width: 500px;
+  max-width: 80%;
 }
 
 img {
@@ -41,6 +40,11 @@ a {
 li {
   list-style-type: none;
   padding-right: 2em;
+}
+
+.project-details {
+  padding-right: none;
+  list-style-type: square;
 }
 
 button { 
@@ -88,7 +92,7 @@ button:active {
 }
 
 .nav__navbar li {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 .nav__logo {
@@ -101,7 +105,7 @@ button:active {
   justify-content: space-around;
   align-items: center;
   background-color: #DFA4D7;
-  font-size: 1em;
+  font-size: 1.25rem;
   
 }
 
@@ -141,7 +145,7 @@ button:active {
   border-radius: .25em;
   background-color: #2A3141;
   color: white;
-  font-size: 16px;
+  font-size: 1rem;
   padding: 1em 2em;
   text-align: center;
   letter-spacing: 2px;
