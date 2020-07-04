@@ -229,14 +229,42 @@ input, textarea {
 .project__image {
   margin: 3em 0;
 }
+
 /* Article Page Styles */
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+  margin: 0 auto;
+  padding: 0 5rem;
+  font-size: 1.2rem;
 }
+.container > h1 {
+  background-color: #DFA4D7;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  margin: 3rem;
+  width: 100%;
+}
+.container > p, ul {
+  padding: 1.5rem 3rem;
+  max-width: 65%;
+}
+@media (max-width: 700px) {
+  .container {
+    padding: 0;
+  }
+  .container > p, ul {
+    max-width: 90%;
+  }
+}
+.project-details > li {
+  list-style-type: none;
+  padding:1.2em 0;
+}
+
 .project-nav {
   align-self: flex-end;
   color: #2A3141;
