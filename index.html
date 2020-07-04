@@ -3,7 +3,8 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>Nick Leake: Product & UI Designer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Nick Leake: Product & UI Designer</title>
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <script>
@@ -26,13 +27,13 @@
       <li><a href="about-me.html">about</a></li>
     </ul>
   </nav>
-  <header class="pink">
-    <div class="pink__intro">
+  <header class="banner">
+    <div class="banner__intro">
       <h1>I am a <span class="special">product</span> person</h1>
       <p>I've built my career as a product manager and UI designer living around Washington, DC. I currently lead a fast and creative team at USCIS and love what I do.</p>
-      <a href="projects.html" class="pink__btn">View Work</a>
+      <a href="projects.html" class="banner__btn">View Work</a>
     </div>
-    <div class="pink__photo"><img src="images/home/coffee_cat-640.png" alt="an illustration of a cat sitting in a coffee cup"></div>     
+    <div class="banner__photo"><img src="images/home/coffee_cat-640.png" alt="an illustration of a cat sitting in a coffee cup"></div>     
   </header>
   
   <section class="section">
@@ -43,46 +44,45 @@
           <img src="images/projects/uscis/serviceBP-480.png" alt="service blueprint Nick's team built to map refugee officer workflows">
           <h3 class="card__header">USCIS</h3>
         </a>
-        <p class="card__role">Role: Senior Product Manager</p>
-        <p class="card__description">At USCIS, I lead product teams in building national refugee and asylum case management systems.</p>
+        <p class="card__description">At USCIS, I lead teams of designers and engineers working to improve the quality and efficiency of America's refugee case management systems.</p>
       </article>
       <article class="card">
         <a href="usatoday.html">
           <img src="images/usatpage1.jpg" alt="the USA TODAY homepage">
           <h3 class="card__header">USA TODAY NETWORK</h3>
         </a>
-        <p class="card__role">Role: Product Manager</p>
         <p class="card__description">At Gannett, I interviewed reporters across the U.S. and designed features for Presto, Gannett's home-grown content management system.</p>
       </article>
       <article class="card">
         <a href="netherlands.html">
           <img src="images/mobomoNLUSA1.jpg" alt="homepage for the Embassy of the Netherlands business portal">
-          <h3 class="card__header">Netherlands Embassy</h3>
+          <h3 class="card__header">Embassy of the Netherlands</h3>
         </a>
-        <p class="card__role">Role: Product Manager</p>
         <p class="card__description">At Mobomo, LLC, I transformed client needs into responsive designs and led distributed product teams to build apps and websites.</p>
       </article>
     </div>
   </section>
     <!-- add more articles below -->
-  <section class="pink">
-    <div class="pink__intro">
+  <section class="banner">
+    <div class="banner__intro">
       <h1>I love making <span class="special">meaningful</span> products.</h1 >
       <p>I pair human-centered design techniques with lean product management to deliver working software quickly. I dig sketching simple, expressive interfaces that solve problems and reduce clutter. I believe that less is more most of the time.</p>
-      <a href="about-me.html"class="pink__btn">Learn About Me</a>
+      <a href="about-me.html"class="banner__btn">Learn About Me</a>
     </div>
-    <div class="pink__photo"><img src="images/leek.jpg" alt="a picture of Nick on his wedding day"></div>
+    <div class="banner__photo"><img src="images/leek.jpg" alt="a picture of Nick on his wedding day"></div>
   </section>
-  <section class="contact-form">
-    <h2>Let's grab coffee sometime</h2>
-    <p>If you want to chat, please drop me a line below. You can also follow or message me via the social media links in the footer. I look forward to hearing from you!</p>
+  <section class="section contact-form">
+    <div class="contact-description">
+      <h2 class="section__header">Let's grab coffee sometime</h2>
+      <p>If you want to chat, please drop me a line below. You can also follow or message me via the social media links in the footer. I look forward to hearing from you!</p>   
+    </div>
     <form action="https://formspree.io/leakend@dukes.jmu.edu" id="contactForm" method="post" name="contactForm" novalidate="">
-          <label for="“name”">Name</label> <input id="name" placeholder="your name" type="text" name="name">
-          <label for="“email”">Email</label> <input id="email" placeholder="person@domain.com" type="email" name="_replyto" required>
-          <label for="“message”">Message</label>
-          <textarea id="message" placeholder="say hello and introduce yourself!" required rows="5" name="message"></textarea>
-        <button id="submit" type="submit">Send</button>
-      </form>
+      <label for="“name”">Name</label> <input id="name" placeholder="your name" type="text" name="name">
+      <label for="“email”">Email</label> <input id="email" placeholder="person@domain.com" type="email" name="_replyto" required>
+      <label for="“message”">Message</label>
+      <textarea id="message" placeholder="say hello and introduce yourself!" required rows="5" name="message"></textarea>
+      <button id="submit" type="submit">Send</button>
+    </form>
   </section>
   <footer>
     <ul class=footer__nav>

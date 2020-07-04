@@ -3,33 +3,11 @@
   margin: 0;
   padding: 0;
 }
-
 body {
   font-family: 'Work Sans', arial, sans-serif;
   line-height: 1.5;
   color: #333333;
 }
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  
-}
-
-h2, label {
-  font-size: 2em;
-}
-
-p {
-  max-width: 80%;
-}
-
-img {
-  max-width: 95%;
-}
-
 a { 
   text-decoration: none;
   color: #333;
@@ -37,16 +15,77 @@ a {
   max-width: 300px;
 }
 
-li {
+/* Navigation */
+.nav {
+  font-family: Futura, Arial, Helvetica, sans-serif;
+  padding-left: 5rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+  }
+
+  .nav__navbar {
+    flex-direction: column;
+  }
+
+  .nav__navbar > li {
+    width: 100vw;
+    padding: 1em 0;
+  }
+}
+.nav__navbar {
+  padding: 0 2rem;
+  display: flex;
+  line-height: 1.5;
+}
+.nav__navbar > li {
+  font-size: 1.5rem;
   list-style-type: none;
-  padding-right: 2em;
+  padding-right: 5em; 
+}
+.nav__logo {
+  font-size: 3.5em;
 }
 
-.project-details {
-  padding-right: none;
-  list-style-type: square;
+/* Banner Styles */
+.banner {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #DFA4D7;
+  font-size: 1.25rem;
 }
 
+.banner__intro {
+  margin-bottom: 3em;
+  max-width: 35vh;
+  transform: rotate(-10deg);
+}
+.banner__intro > h1 { 
+  font-family: Futura, Arial, Helvetica, sans-serif;
+  font-size: 3em;
+  letter-spacing: .025em;
+  padding-bottom: .5em;
+}
+.banner__photo {
+  display: relative;
+  float: right;
+  top: -2rem;
+}
+.special {
+  color: white;
+  font-style: italic;
+}
+
+/* Banner and Form Buttons */
 button { 
   outline: none;
   border: none;
@@ -61,87 +100,23 @@ button {
   padding: 1em 2em;
   text-align: center;
   letter-spacing: 2px;
-  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
-  
-  
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4); 
 }
-
 button:hover { 
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
   top: 2px;
 }
-
 button:active {
-      box-shadow: none;
-      top: 6px;
-    }
-
-.nav {
-  font-family: Futura, Arial, Helvetica, sans-serif;
-  padding-left: 5vw;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
+  box-shadow: none;
+  top: 6px;
 }
-
-.nav__navbar {
-  padding: 0 5vw;
-  display: flex;
-  justify-content: flex-start;
-  line-height: 1.5;
-}
-
-.nav__navbar li {
-  font-size: 1.5rem;
-}
-
-.nav__logo {
-  font-size: 3.5em;
-}
-
-.pink {
-  display: flex;
-  flex-wrap: wrap-reverse;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #DFA4D7;
-  font-size: 1.25rem;
-  
-}
-
-.pink__intro {
-  margin-bottom: 3em;
-  max-width: 35vw;
-  transform: rotate(-10deg);
-}
-
-.pink h1 { 
-  font-family: Futura, Arial, Helvetica, sans-serif;
-  font-size: 3em;
-}
-
-.pink__photo {
-  display: relative;
-  float: right;
-  top: -2em;
-}
-
-.special {
-  color: white;
-  font-style: italic;
-}
-
-.card img {
-  object-fit: contain;
-  max-width: 100%;
-}
-
-.pink__btn { 
+.banner__btn { 
   width: 250;
   outline: none;
   border: none;
   cursor: pointer;
   position: relative;
+  margin-top: 1.5em;
   border-radius: .25em;
   background-color: #2A3141;
   color: white;
@@ -149,84 +124,122 @@ button:active {
   padding: 1em 2em;
   text-align: center;
   letter-spacing: 2px;
-  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
-  
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4); 
 }
-    .pink__btn:hover { 
-      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
-      top: 2px;
-    }
-    
-    .pink__btn:active {
-      box-shadow: none;
-      top: 6px;
-    }
+.banner__btn:hover { 
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
+  top: 2px;
+}
+.banner__btn:active {
+  box-shadow: none;
+  top: 6px;
+}
 
+/* Project Cards */
+.section {
+  padding: 5rem;
+}
+.section__header {
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
 .card-set {
   display: flex;
   flex-flow: row wrap;
 }
-
-.card {
-  margin: 0 24px 3em 0;
-  flex: 1 1 400px;
+article.card {
+  margin: 0 5rem 5rem 5rem;
+  max-width: 350px;
 }
-
+article.card img {
+  object-fit: cover;
+  max-width: 100%;
+}
+article.card > a:hover {
+  color: #DFA4D7;
+}
 .card__header {
   font-family: 'Futura', Arial, Helvetica, sans-serif;
   font-size: 1.5em;
   font-weight: 300;
+  margin: .5em 0;
   text-transform: uppercase;
 }
 
-.contact-form {
-  padding-left: 15vw;
+/* Contact Form */
+.contact-description > p {
+  max-width: 550px;
 }
 #contactForm {
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  font-size: 2.5rem;
+  margin-top: 5rem;
 }
 
-
+#contactForm > label {
+  font-family: Futura, sans-serif;
+}
 
 input, textarea {
   background-color: #D4D6D4;
-  padding: .5em;
+  border-radius: 3px;
+  padding: 1em;
   margin-bottom: 2em;
   border: none;
-  width: 300px;
+  width: 400px;
+  font-family: 'Work Sans', arial, sans-serif;
 }
 
-.section {
-  padding-left: 15vw;
-}
-
+/* Footer */
 .footer__nav {
   margin-top: 3em;
-  padding-top: 1.5em;
+  padding: 3em 1.5em;
   border-top: 1px solid #333;
   display: flex;
   justify-content: space-around;
   max-width: 100%;
   font-size: 1em;
 }
-
-.footer__link li {
+.footer__nav > li {
   text-align: center;
+  list-style-type: none;
+  font-size: 1.25rem;
 }
 
+.footer__link > a:hover {
+  color: #DFA4D7;
+  text-decoration: underline;
+}
+
+/* Projects Page */
+.grid-section {
+  margin: 5vw;
+  transform: rotate(-5deg);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
+  max-width: 1600px;
+}
+.grid-section > h2 {
+  background-color: #DFA4D7;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.project__image {
+  margin: 3em 0;
+}
+/* Article Page Styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
 .project-nav {
   align-self: flex-end;
   color: #2A3141;
   text-decoration: underline;
   margin: 4em 25vw;
-}
-
-.grid-section {
-  margin-left: 5vw;
-}
-
-.project__image {
-  margin: 3em 0;
 }
