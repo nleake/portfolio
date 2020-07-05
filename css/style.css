@@ -229,7 +229,8 @@ footer {
   padding: 0 2rem;
 }
 .project__image {
-  max-width: 100%;
+  max-width: 95%;
+  margin: 2rem 0; 
 }
 
 /* Article Page Styles */
@@ -249,6 +250,9 @@ footer {
   text-align: center;
   margin-bottom: 3rem;
   width: 100%;
+}
+.container > h2 {
+  margin-top: 3rem;
 }
 .container > p, ul {
   padding: 1.5rem 3rem;
