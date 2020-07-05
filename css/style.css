@@ -229,7 +229,7 @@ footer {
   padding: 0 2rem;
 }
 .project__image {
-  margin: 3em 0;
+  max-width: 100%;
 }
 
 /* Article Page Styles */
@@ -266,13 +266,6 @@ footer {
   list-style-type: none;
   padding:1.2em 0;
 }
-
-.project-nav {
-  align-self: flex-end;
-  color: #2A3141;
-  text-decoration: underline;
-  margin: 4em 25vw;
-}
 .my-role {
   background-color: #DFA4D7;
   color: white;
@@ -284,4 +277,10 @@ footer {
 }
 .my-role > li {
   padding: .75em 0;
+}
+.project-nav {
+  align-self: flex-end;
+  color: #2A3141;
+  text-decoration: underline;
+  margin: 4em 25vw;
 }
