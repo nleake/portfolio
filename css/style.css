@@ -18,12 +18,24 @@ a {
 /* Navigation */
 .nav {
   font-family: Futura, Arial, Helvetica, sans-serif;
-  padding-left: 5rem;
+  padding: 3rem 5rem 1rem 5rem;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
 }
-
+.nav__navbar {
+  display: flex;
+  line-height: 1.5;
+  padding: 0;
+}
+.nav__navbar > li {
+  font-size: 1.5rem;
+  list-style-type: none;
+  padding-right: 5em; 
+}
+.nav__logo {
+  font-size: 3.5em;
+}
 @media (max-width: 600px) {
   .nav {
     flex-direction: column;
@@ -40,20 +52,6 @@ a {
     padding: 1em 0;
   }
 }
-.nav__navbar {
-  padding: 0 2rem;
-  display: flex;
-  line-height: 1.5;
-}
-.nav__navbar > li {
-  font-size: 1.5rem;
-  list-style-type: none;
-  padding-right: 5em; 
-}
-.nav__logo {
-  font-size: 3.5em;
-}
-
 /* Banner Styles */
 .banner {
   display: flex;
@@ -65,9 +63,8 @@ a {
 }
 
 .banner__intro {
-  margin-bottom: 3em;
+  margin: 3em 0;
   max-width: 35vh;
-  transform: rotate(-10deg);
 }
 .banner__intro > h1 { 
   font-family: Futura, Arial, Helvetica, sans-serif;
@@ -76,9 +73,8 @@ a {
   padding-bottom: .5em;
 }
 .banner__photo {
-  display: relative;
   float: right;
-  top: -2rem;
+  max-width: 95%;
 }
 .special {
   color: white;
@@ -92,7 +88,7 @@ button {
   cursor: pointer;
   position: relative;
   display: block;
-  width: 300px;
+  max-width: 300px;
   border-radius: .25em;
   background-color: #2A3141;
   color: white;
@@ -141,15 +137,16 @@ button:active {
 }
 .section__header {
   font-size: 3rem;
-  padding-bottom: 2rem;
+  padding-bottom: 5rem;
 }
 .card-set {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-between;
 }
 article.card {
-  margin: 0 5rem 5rem 5rem;
   max-width: 350px;
+  margin-bottom: 8rem;
 }
 article.card img {
   object-fit: cover;
@@ -187,24 +184,27 @@ input, textarea {
   padding: 1em;
   margin-bottom: 2em;
   border: none;
-  width: 400px;
+  max-width: 400px;
   font-family: 'Work Sans', arial, sans-serif;
 }
 
 /* Footer */
-.footer__nav {
-  margin-top: 3em;
-  padding: 3em 1.5em;
+footer {
+  margin-top: 3rem;
   border-top: 1px solid #333;
+  display: grid;
+  place-items: center;
+}
+.footer__nav {
   display: flex;
   justify-content: space-around;
-  max-width: 100%;
+  flex-wrap: wrap;
   font-size: 1em;
 }
 .footer__nav > li {
-  text-align: center;
   list-style-type: none;
   font-size: 1.25rem;
+  padding: 2rem;
 }
 
 .footer__link > a:hover {
@@ -215,7 +215,6 @@ input, textarea {
 /* Projects Page */
 .grid-section {
   margin: 5vw;
-  transform: rotate(-5deg);
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
   max-width: 1600px;
 }
@@ -225,6 +224,9 @@ input, textarea {
   padding: 2rem 0;
   text-align: center;
   margin-bottom: 5rem;
+}
+.grid-section > .card-set {
+  padding: 0 2rem;
 }
 .project__image {
   margin: 3em 0;
@@ -245,12 +247,12 @@ input, textarea {
   color: white;
   padding: 2rem 0;
   text-align: center;
-  margin: 3rem;
+  margin-bottom: 3rem;
   width: 100%;
 }
 .container > p, ul {
   padding: 1.5rem 3rem;
-  max-width: 65%;
+  max-width: 800px;
 }
 @media (max-width: 700px) {
   .container {
@@ -275,11 +277,11 @@ input, textarea {
   background-color: #DFA4D7;
   color: white;
   border-radius: 10px;
+  margin-top: .5rem;
   font-family: Futura, sans-serif;
-  margin: .5em;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
+  padding: 3rem;
 }
 .my-role > li {
   padding: .75em 0;
-  
 }
