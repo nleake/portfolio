@@ -14,6 +14,10 @@ a {
   display: block;
   max-width: 300px;
 }
+img{
+  display:block;
+  max-width: 100%;
+}
 
 /* Navigation */
 .nav {
@@ -73,7 +77,6 @@ a {
   padding-bottom: .5em;
 }
 .banner__photo {
-  float: right;
   max-width: 95%;
 }
 .special {
@@ -159,7 +162,7 @@ article.card > a:hover {
   font-family: 'Futura', Arial, Helvetica, sans-serif;
   font-size: 1.5em;
   font-weight: 300;
-  margin: .5em 0;
+  margin: .75em 0;
   text-transform: uppercase;
 }
 
