@@ -76,9 +76,6 @@ img{
   letter-spacing: .025em;
   padding-bottom: .5em;
 }
-.banner__photo {
-  max-width: 95%;
-}
 .special {
   color: white;
   font-style: italic;
@@ -217,7 +214,7 @@ footer {
 
 /* Projects Page */
 .grid-section {
-  margin: 5vw;
+  margin: 5rem;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
   max-width: 1600px;
 }
@@ -242,7 +239,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 5rem auto;
   padding: 0 5rem;
   font-size: 1.2rem;
 }
@@ -290,4 +287,7 @@ footer {
   color: #2A3141;
   text-decoration: underline;
   margin: 4em 25vw;
+}
+.active {
+  border-bottom: 6px solid #DFA4D7;
 }
