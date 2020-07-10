@@ -134,16 +134,17 @@ button:active {
 
 /* Project Cards */
 .section {
-  padding: 5rem;
+  display: grid;
+  place-items: center;
 }
 .section__header {
   font-size: 3rem;
-  padding-bottom: 5rem;
+  padding: 5rem;
 }
 .card-set {
   display: flex;
   flex-flow: row wrap;
-  justify-content: start;
+  justify-content: center;
 }
 article.card {
   margin: 0 3rem 5rem 3rem;
@@ -168,6 +169,7 @@ article.card > a:hover {
 /* Contact Form */
 .contact-description > p {
   max-width: 550px;
+  padding: 0 5rem;
 }
 #contactForm {
   display: flex;
