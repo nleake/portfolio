@@ -148,8 +148,9 @@ button:active {
 }
 article.card {
   max-width: 350px;
-  margin-bottom: 8rem;
+  margin: 8rem 3rem;
   padding: 1.5rem;
+
 }
 article.card img {
   object-fit: cover;
