@@ -38,7 +38,7 @@ img{
   padding-right: 5em; 
 }
 .nav__logo {
-  font-size: 3.5em;
+  font-size: 3.75rem;
 }
 @media (max-width: 600px) {
   .nav {
@@ -46,14 +46,16 @@ img{
     align-items: flex-start;
     justify-content: start;
   }
-
+  .nav__logo {
+    width: 100%;
+  }
   .nav__navbar {
     flex-direction: column;
   }
 
   .nav__navbar > li {
-    width: 100vw;
     padding: 1em 0;
+
   }
 }
 /* Banner Styles */
@@ -142,11 +144,12 @@ button:active {
 .card-set {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: start;
 }
 article.card {
   max-width: 350px;
   margin-bottom: 8rem;
+  padding: 1.5rem;
 }
 article.card img {
   object-fit: cover;
@@ -197,14 +200,15 @@ footer {
 }
 .footer__nav {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
   font-size: 1em;
 }
 .footer__nav > li {
   list-style-type: none;
   font-size: 1.25rem;
-  padding: 2rem;
+  padding: 2rem 1.75rem;
+  flex: 1 1 auto;
+  text-align: left;
 }
 
 .footer__link > a:hover {
@@ -216,7 +220,6 @@ footer {
 .grid-section {
   margin: 5rem 0;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
-  max-width: 1600px;
 }
 .grid-section > h2 {
   background-color: #DFA4D7;
