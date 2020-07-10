@@ -146,8 +146,7 @@ button:active {
   justify-content: start;
 }
 article.card {
-  max-width: 350px;
-  margin: 8rem 3rem;
+  margin: 0 3rem 5rem 3rem;
   padding: 1.5rem;
   flex: 0 1 400px;
 }
@@ -241,8 +240,6 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 5rem auto;
-  padding: 0 5rem;
   font-size: 1.2rem;
 }
 .container > h1 {
