@@ -188,7 +188,7 @@ input, textarea {
   padding: 1em;
   margin-bottom: 2em;
   border: none;
-  min-width: 400px;
+  min-width: 300px;
   max-width: 800px;
   font-family: 'Work Sans', arial, sans-serif;
 }
