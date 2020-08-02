@@ -64,6 +64,9 @@ img{
 .banner__photo { 
   max-width: 40%;
 }
+.banner_photo > img {
+  border-radius: 15px;
+}
 .banner__intro {
   margin: 3em 0;
   max-width: 35vh;
@@ -151,6 +154,7 @@ article.card {
 article.card img {
   object-fit: cover;
   max-width: 100%;
+  border-radius: 10px;
 }
 article.card > a:hover {
   color: #DFA4D7;
