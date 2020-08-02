@@ -61,7 +61,9 @@ img{
   background-color: #DFA4D7;
   font-size: 1.25rem;
 }
-
+.banner__photo { 
+  max-width: 40%;
+}
 .banner__intro {
   margin: 3em 0;
   max-width: 35vh;
