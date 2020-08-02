@@ -34,24 +34,16 @@ img{
 .nav__logo {
   font-size: 3.75rem;
 }
-/* @media (max-width: 600px) {
+@media (max-width: 600px) {
   .nav {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: start;
+    padding: 2rem;
   }
-  .nav__logo {
-    width: 100%;
+  .menu__link {
+    position: relative;
+    padding: 0;
+    align-self: flex-start;
   }
-  .nav__navbar {
-    flex-direction: column;
-  }
-
-  .nav__navbar > li {
-    padding: 1em 0;
-
-  }
-} */
+}
 /* Banner Styles */
 .banner {
   display: flex;
