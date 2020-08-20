@@ -307,13 +307,16 @@ li > a:hover {
   .container > p, ul {
     max-width: 90%;
   }
+  #cat {
+    padding-top: 2rem;
+  }
 }
 @media (max-width: 600px) {
   .nav {
     padding: 2rem;
   }
   .nav__logo {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
   }
   .menu__link {
     font-size: 1rem;
