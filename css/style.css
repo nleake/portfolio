@@ -17,9 +17,6 @@ img{
   display:block;
   max-width: 100%;
 }
-#logo {
-  max-width: 400px;
-}
 
 /* Navigation */
 .nav {
@@ -40,8 +37,13 @@ img{
 }
 .nav__logo {
   font-size: 3.75rem;
+  display: flex;
+  align-items: center;
 }
-
+#logo {
+  max-width: 8rem;
+  padding: .5rem;
+}
 /* Banner Styles */
 .banner {
   display: flex;
