@@ -286,6 +286,9 @@ li > a:hover {
   padding: 1em;
   font-size: 1.5em;
 }
+.menu > li {
+  padding-bottom: 1rem;
+}
 .screen-reader-text {
   border: 0;
   clip: rect(1px,1px,1px,1px);
