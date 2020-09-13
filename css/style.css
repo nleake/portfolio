@@ -11,7 +11,6 @@ body {
 a { 
   text-decoration: none;
   color: #333;
-  display: block;
 }
 img{
   display:block;
@@ -75,6 +74,10 @@ img{
 }
 
 /* Banner and Form Buttons */
+.btn {
+  display: block;
+  margin-top: 1.25rem;
+}
 button { 
   outline: none;
   border: none;
