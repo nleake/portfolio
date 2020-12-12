@@ -23,7 +23,7 @@ img{
   padding: 3rem 5rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .menu__link {
   font-size: 1.5rem;
@@ -54,10 +54,8 @@ img{
   font-size: 1.25rem;
 }
 .banner__photo { 
-  max-width: 33%;
-}
-.banner_photo > img {
-  border-radius: 15px;
+  min-width: 200px;
+  max-width: 600px;
 }
 .banner__intro {
   margin: 3em 0;
@@ -145,14 +143,13 @@ button:active {
   max-width: 1270px;
 }
 article.card {
-  margin: 0 3rem 5rem 3rem;
-  padding: 1.5rem;
-  flex: 0 1 400px;
+  margin-left: 5rem;
+  margin-bottom: 5rem;
+  flex: 0 1 450px;
 }
 article.card img {
   object-fit: cover;
   max-width: 100%;
-  border-radius: 10px;
 }
 article.card > a:hover {
   color: #DFA4D7;
@@ -168,7 +165,6 @@ article.card > a:hover {
 /* Contact Form */
 .contact-description > p {
   max-width: 550px;
-  padding: 0 5rem;
 }
 #contactForm {
   display: flex;
@@ -333,7 +329,15 @@ li > a:hover {
     padding: 0;
     align-self: flex-start;
   }
+  .section {
+    padding: 1rem 3rem;
+  }
+  .banner {
+    padding: 1rem 3rem;
+  }
   .banner__photo { 
     max-width: 80%;
   }
-}
+  .banner__intro {
+    max-width: 550px;
+  }
