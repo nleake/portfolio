@@ -46,21 +46,22 @@ img{
 /* Banner Styles */
 .banner {
   display: flex;
+  padding: 1rem 5rem;
   flex-wrap: wrap-reverse;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: #DFA4D7;
   font-size: 1.25rem;
 }
 .banner__photo { 
-  max-width: 50%;
+  max-width: 33%;
 }
 .banner_photo > img {
   border-radius: 15px;
 }
 .banner__intro {
   margin: 3em 0;
-  max-width: 35vh;
+  max-width: 40vw;
 }
 .banner__intro > h1 { 
   font-family: Futura, Arial, Helvetica, sans-serif;
@@ -77,6 +78,7 @@ img{
 .btn {
   display: block;
   margin-top: 4rem;
+  width: 400px;
 }
 button { 
   outline: none;
@@ -103,7 +105,6 @@ button:active {
   top: 6px;
 }
 .banner__btn { 
-  width: 250;
   outline: none;
   border: none;
   cursor: pointer;
@@ -129,17 +130,19 @@ button:active {
 
 /* Project Cards */
 .section {
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
 }
 .section__header {
   font-size: 3rem;
-  padding: 5rem;
+  margin-bottom: 1rem;
 }
 .card-set {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  max-width: 1270px;
 }
 article.card {
   margin: 0 3rem 5rem 3rem;
@@ -185,7 +188,7 @@ input, textarea {
   margin-bottom: 2em;
   border: none;
   min-width: 300px;
-  max-width: 800px;
+  max-width: 600px;
   font-family: 'Work Sans', arial, sans-serif;
 }
 
