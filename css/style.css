@@ -338,7 +338,7 @@ li > a:hover {
     max-width: 80%;
   }
   .banner__intro {
-    max-width: 500px;
+    max-width: 100%;
   }
   article.card {
     margin-left: 0;
