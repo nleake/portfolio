@@ -31,7 +31,7 @@ img{
   padding-right: 5em; 
 }
 .menu__link:hover {
-  color: #DFA4D7;
+  color: #AD3D9E;
   text-decoration: underline;
 }
 .nav__logo {
@@ -50,7 +50,7 @@ img{
   flex-wrap: wrap-reverse;
   justify-content: space-between;
   align-items: center;
-  background-color: #DFA4D7;
+  background-color: #AD3D9E;
   font-size: 1.25rem;
 }
 .banner__photo { 
@@ -152,7 +152,7 @@ article.card img {
   max-width: 100%;
 }
 article.card > a:hover {
-  color: #DFA4D7;
+  color: #AD3D9E;
 }
 .card__header {
   font-family: 'Futura', Arial, Helvetica, sans-serif;
@@ -209,7 +209,7 @@ footer {
 }
 
 li > a:hover {
-  color: #DFA4D7;
+  color: #AD3D9E;
   text-decoration: underline;
 }
 
@@ -218,7 +218,7 @@ li > a:hover {
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
 }
 .grid-section > h2 {
-  background-color: #DFA4D7;
+  background-color: #AD3D9E;
   color: white;
   padding: 2rem 0;
   text-align: center;
@@ -241,7 +241,7 @@ li > a:hover {
   font-size: 1.2rem;
 }
 .container > h1 {
-  background-color: #DFA4D7;
+  background-color: #AD3D9E;
   color: white;
   padding: 2rem 0;
   text-align: center;
@@ -260,7 +260,7 @@ li > a:hover {
   padding:1.2em 0;
 }
 .my-role {
-  background-color: #DFA4D7;
+  background-color: #AD3D9E;
   color: white;
   border-radius: 10px;
   margin-top: .5rem;
@@ -277,7 +277,7 @@ li > a:hover {
   margin: 4em 25vw;
 }
 .active {
-  border-bottom: 6px solid #DFA4D7;
+  border-bottom: 6px solid #AD3D9E;
 }
 
 /* MENU */
