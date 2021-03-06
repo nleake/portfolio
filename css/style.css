@@ -59,7 +59,8 @@ img{
 }
 .banner__intro {
   margin: 3em 0;
-  max-width: 40vw;
+  max-width: 500px;
+  color: white;
 }
 .banner__intro > h1 { 
   font-family: Futura, Arial, Helvetica, sans-serif;
@@ -69,7 +70,7 @@ img{
 }
 .special {
   color: white;
-  font-style: italic;
+  text-decoration: underline;
 }
 
 /* Banner and Form Buttons */
@@ -109,8 +110,9 @@ button:active {
   position: relative;
   margin-top: 1.5em;
   border-radius: .25em;
-  background-color: #2A3141;
-  color: white;
+  background-color: white;
+  color:#AD3D9E;
+  font-weight: bold;
   font-size: 1rem;
   padding: 1em 2em;
   text-align: center;
@@ -135,6 +137,7 @@ button:active {
 .section__header {
   font-size: 3rem;
   margin-bottom: 1rem;
+  margin-top: 1.5rem;
 }
 .card-set {
   display: flex;
@@ -178,15 +181,18 @@ article.card > a:hover {
 }
 
 input, textarea {
-  background-color: #D4D6D4;
-  border-radius: 3px;
+  background-color: #F4E1F2;
+  border-radius: 8px;
+  font-size: 14px;
   padding: 1em;
   margin-bottom: 2em;
-  border: none;
+  border: 2px solid #FEFEFE;
   min-width: 300px;
   max-width: 600px;
   font-family: 'Work Sans', arial, sans-serif;
 }
+
+
 
 /* Footer */
 footer {
@@ -335,7 +341,7 @@ li > a:hover {
     padding: 1rem 3rem;
   }
   .banner__photo { 
-    max-width: 80%;
+    max-width: 75%;
   }
   .banner__intro {
     max-width: 100%;
