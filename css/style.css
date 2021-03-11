@@ -20,15 +20,15 @@ img{
 /* Navigation */
 .nav {
   font-family: Futura, Arial, Helvetica, sans-serif;
-  padding: 3rem 5rem;
+  padding: 2rem;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .menu__link {
   font-size: 1.5rem;
   list-style-type: none;
-  padding-right: 5em; 
+  align-self: flex-start;
 }
 .menu__link:hover {
   color: #AD3D9E;
@@ -38,10 +38,12 @@ img{
   font-size: 3.75rem;
   display: flex;
   align-items: center;
+  margin-right: 2rem;
+  font-weight:bold;
 }
 #logo {
   max-width: 8rem;
-  padding: .5rem;
+  margin-right:.5rem;
 }
 /* Banner Styles */
 .banner {
@@ -53,9 +55,9 @@ img{
   background-color: #AD3D9E;
   font-size: 1.25rem;
 }
-.banner__photo { 
+.coffeecat { 
   min-width: 200px;
-  max-width: 600px;
+  max-width: 410px;
 }
 .banner__intro {
   margin: 3em 0;
@@ -146,16 +148,26 @@ button:active {
   max-width: 1270px;
 }
 article.card {
-  margin-left: 8rem;
-  margin-bottom: 8rem;
-  flex: 0 1 450px;
+  position:relative;
+  margin-left: 1.5rem;
+  margin-bottom: 6rem;
+  flex: 0 1 330px;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 2px solid #e5e5e5;
+  box-shadow: 0px 6px 19px -6px rgba(0, 0, 0, 0.25);
 }
 article.card img {
   object-fit: cover;
   max-width: 100%;
 }
-article.card > a:hover {
-  color: #AD3D9E;
+article.card:hover {
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
+  top: 2px;
+}
+article.card:active {
+  box-shadow: none;
+  top: 6px;
 }
 .card__header {
   font-family: 'Futura', Arial, Helvetica, sans-serif;
@@ -172,7 +184,7 @@ article.card > a:hover {
 #contactForm {
   display: flex;
   flex-direction: column;
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-top: 5rem;
 }
 
@@ -181,15 +193,20 @@ article.card > a:hover {
 }
 
 input, textarea {
-  background-color: #F4E1F2;
+  background-color: #f5f5f5;
   border-radius: 8px;
   font-size: 14px;
   padding: 1em;
   margin-bottom: 2em;
-  border: 2px solid #FEFEFE;
+  border: 1px solid #FEFEFE;
   min-width: 300px;
   max-width: 600px;
   font-family: 'Work Sans', arial, sans-serif;
+}
+textarea:focus, input:focus {
+  background-color:rgba(173, 61, 158, 0.25);
+  border: 2px solid #AD3D9E;  
+  outline: none;
 }
 
 
@@ -221,7 +238,7 @@ li > a:hover {
 
 /* Projects Page */
 .grid-section {
-  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 1px 4px rgba(173, 61, 158, 0.4);
 }
 .grid-section > h2 {
   background-color: #AD3D9E;
@@ -230,11 +247,8 @@ li > a:hover {
   text-align: center;
   margin-bottom: 5rem;
 }
-.grid-section > .card-set {
-  padding: 0 2rem;
-}
 .project__image {
-  max-width: 95%;
+  max-width: 800px;
   margin: 2rem 0; 
 }
 
@@ -294,7 +308,7 @@ li > a:hover {
   font-size: 1.5em;
 }
 .menu > li {
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
 }
 .screen-reader-text {
   border: 0;
@@ -320,19 +334,18 @@ li > a:hover {
   #cat {
     padding-top: 2rem;
   }
+  .project__image {
+    max-width: 95%;
+  }
 }
 @media (max-width: 600px) {
-  .nav {
-    padding: 2rem;
-  }
   .nav__logo {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   .menu__link {
     font-size: 1rem;
     position: relative;
     padding: 0;
-    align-self: flex-start;
   }
   .section {
     padding: 1rem 3rem;
