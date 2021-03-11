@@ -218,6 +218,7 @@ footer {
   border-top: 1px solid #333;
   display: grid;
   place-items: center;
+  background-color: #AD3D9E;
 }
 .footer__nav {
   display: flex;
@@ -230,6 +231,9 @@ footer {
   padding: 2rem 1.75rem;
   flex: 1 1 auto;
   text-align: left;
+}
+.social {
+  width: 50px;
 }
 
 li > a:hover {
