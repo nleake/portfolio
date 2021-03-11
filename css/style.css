@@ -233,7 +233,10 @@ footer {
   text-align: left;
 }
 .social {
-  width: 50px;
+  width: 40px;
+}
+.footer__link {
+  color: #FEFEFE;
 }
 
 li > a:hover {
